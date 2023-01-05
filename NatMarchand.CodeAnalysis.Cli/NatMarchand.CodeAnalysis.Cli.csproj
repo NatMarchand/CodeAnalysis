@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>nm-codeanalysis</ToolCommandName>
+		<Authors>NatMarchand</Authors>
+		<Description>This tools allow to run a Roslyn static code analysis on a solution</Description>
+	</PropertyGroup>
+
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Build.Locator" Version="1.5.5" />
+		<PackageReference Include="Microsoft.CodeAnalysis" Version="4.4.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.4.0" />
+	</ItemGroup>
+
+</Project>
